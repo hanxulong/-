@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>韩旭龙</title>
+    <link rel="short icon" href="Resource/Resource/icon.png">
+    <link rel="stylesheet" href="ExternalStyle.css">
+    <style>
+        ul{
+            display:table;
+            width: 100%;
+            background: white;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        ul li{
+            display: table-cell;
+            width:33.3%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        ul li span{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+<span>小滴服务</span>
+</header>
+
+<section class="DS_first_section">
+<img id="bannerImg" img src="Resource/Resource/banner-1.png" alt="检查网络">
+    <script>
+        var imgNumber = 1;
+        var bannerImg = document.getElementById("bannerImg");
+        function changeImg(){
+            imgNumber++;
+            if (imgNumber > 3){
+                imgNumber = 1;
+            }
+            bannerImg.src = "Resource/Resource/banner-"+imgNumber+".png"
+        }
+        setInterval(changeImg, 2000);
+    </script>
+</section>
+
+<section class="DS_second_section">
+    <ul class="DS_first_ul">
+        <li><img src="Resource/Resource/index1.png" alt=""> <span> 企业平台</span></li>
+        <li><img src="Resource/Resource/index2.png" alt=""> <span> 平台风采</span></li>
+        <li><img src="Resource/Resource/index3.png" alt=""> <span> 报名流程</span></li>
+    </ul>
+    <ul>
+        <li><img src="Resource/Resource/index4.png" alt=""> <span> 客户管理</span></li>
+        <li><img src="Resource/Resource/index5.png" alt=""> <span> 账务管理</span></li>
+        <li><img src="Resource/Resource/index6.png" alt=""> <span> 新闻公告</span></li>
+    </ul>
+    <ul>
+        <li><img src="Resource/Resource/index7.png" alt=""> <span> 工程案例</span></li>
+        <li><img src="Resource/Resource/index8.png" alt=""> <span> 修改密码</span></li>
+        <li><img src="Resource/Resource/index9.png" alt=""> <span> 会员注册</span></li>
+    </ul>
+</section>
+
+<footer>
+    <a href=""> <img src="Resource/Resource/nav11.png" alt=""> <span style="color:red">小滴服务</span></a>
+    <a href="Enterpriseproject.html"> <img src="Resource/Resource/nav20.png" alt=""> <span>企业项目</span></a>
+    <a href="ServiceProcess.html"> <img src="Resource/Resource/nav30.png" alt=""> <span>服务流程</span></a>
+    <a href="PlatformMien.html"> <img src="Resource/Resource/nav40.png" alt=""> <span>平台风采</span></a>
+    <a href="MyDroplet.html"> <img src="Resource/Resource/nav50.png" alt=""> <span>我的小滴</span></a>
+</footer>
+
+</body>
+</html>
